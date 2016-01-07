@@ -22,6 +22,7 @@ function testSumPairs(num){
     for (let x of sums) {
         res.push(assertEquals(sumArr(x), num));
     }
+    
     if (allTrue(res)){
         console.log("SumPairs Test passed");
     }

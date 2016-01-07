@@ -13,3 +13,11 @@ exports.productPairs = (num) => {
     }
     return pairs;
 }
+
+exports.product = (arr) => {
+    let prd = 1;
+    for (let x of arr){
+        prd *= x;
+    }
+    return prd;
+}
