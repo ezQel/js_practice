@@ -1,19 +1,5 @@
 const {sumPairs, sumArr} = require("./sum_pairs");
-
-let assertEquals = (a, b) => { // checks whether two values are equal
-    return a === b;
-}
-
-let allTrue = (arr) => {  // checks whether the entire array is filled with true value
-    for (let y of arr) {
-        if(!y){
-            
-            return false;
-        }
-    }
-    return true;
-}
-
+const {assertEquals, allTrue} = require("./tests");
 // test sumArr function
 function testSumArr(){
     let ar = [5, 3];
