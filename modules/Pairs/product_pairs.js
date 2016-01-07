@@ -2,10 +2,14 @@
 
 exports.productPairs = (num) => {
     let incr = 1;
-    let decr = num - 1;
+    let decr = num;
+    let pairs = [];
 
-    while (true) {
-        
+    while (incr <= num / incr) {
+        if (num % incr == 0){
+            pairs.push([incr, (num / incr)]);
+        }
+        incr ++;
     }
-
+    return pairs;
 }

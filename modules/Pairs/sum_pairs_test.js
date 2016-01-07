@@ -15,8 +15,7 @@ function testSumArr(){
 testSumArr();
 
 // test sumPairs
-function testSumPairs(){
-    let num = 40;
+function testSumPairs(num){
     let sums = sumPairs(num);
     let res = [];
     
@@ -31,4 +30,6 @@ function testSumPairs(){
     }
 }
 
-testSumPairs();
+for (let x = 0; x < 100; x++){
+    testSumPairs(x);
+}
