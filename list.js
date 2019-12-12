@@ -43,7 +43,7 @@ function prepend(_element, _ls){
     return _ls;
 }
 
-function nth(_ls, _num){
+function nth_2(_ls, _num){
     _val = undefined;
     while(_num >= 0){
         if(_ls == undefined){
@@ -56,6 +56,22 @@ function nth(_ls, _num){
         _num --;
     }
     return _val;
+}
+
+function nth(_ls, _num){ //recurse implementation of *nth*
+    // console.log(_num);
+    if(_num == 0){
+        return _ls.value;
+    }
+    else{
+        if(_ls.rest == null){
+            return undefined;
+        }
+        else{
+            return nth(_ls.rest, _num - 1);        
+        }
+        
+    }
 }
 
 let array = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -75,4 +91,4 @@ let list = {
 
 console.log(arrayToList(array));
 console.log(listToArray(list));
-console.log(nth(list, 3));
+console.log(nth(list, 4));
