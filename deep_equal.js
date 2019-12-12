@@ -16,6 +16,10 @@ function deepEqual(_val, _val2){
     }
 }
 
+function deepEquals(){
+    //TODO recursive implementation of deepEquals
+}
+
 let det = {
     fname : 'Ezekiel',
     sname : 'Kalama'
