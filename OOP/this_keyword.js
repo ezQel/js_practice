@@ -7,3 +7,6 @@ let koala = {animal : 'koala' , type : 'black', speak};
 
 bear.speak("I'm grizzly");
 koala.speak("I'm kool");
+
+speak.call(bear, "I'm grizzly");
+speak.call(koala, "I'm kool");
