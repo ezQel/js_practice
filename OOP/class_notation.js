@@ -28,11 +28,11 @@ let cow = new class{
 }
 cow.makesound();
 
-Rabbit.prototype.teeth = 'small';
+Rabbit.prototype.teeth = 'small'; // property is added to the class prototype
 console.log(killerRabbit.teeth);
 console.log(weirdRabbit.teeth);
 
-killerRabbit.teeth = 'long, sharp and bloody';
+killerRabbit.teeth = 'long, sharp and bloody'; // property is added to the object itself. prototype property is overriden
 weirdRabbit.teeth = 'large incisors';
 
 console.log(killerRabbit.teeth);
