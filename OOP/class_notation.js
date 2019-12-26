@@ -27,3 +27,13 @@ let cow = new class{
     }
 }
 cow.makesound();
+
+Rabbit.prototype.teeth = 'small';
+console.log(killerRabbit.teeth);
+console.log(weirdRabbit.teeth);
+
+killerRabbit.teeth = 'long, sharp and bloody';
+weirdRabbit.teeth = 'large incisors';
+
+console.log(killerRabbit.teeth);
+console.log(weirdRabbit.teeth);
