@@ -1,4 +1,4 @@
-function prompDirection(direction) {
+function promptDirection(direction) {
     let result = direction; //prompt(question)
     
     if (result.toLowerCase() === 'left') { return 'L';}
@@ -7,7 +7,7 @@ function prompDirection(direction) {
 }
 
 function look(direction) {
-    if (prompDirection(direction) == 'L') {
+    if (promptDirection(direction) == 'L') {
         return 'a House';
     }
     else{
