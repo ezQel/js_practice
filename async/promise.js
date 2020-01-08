@@ -1,5 +1,6 @@
-//A promise is an asynchronous action that may complete at some point and produce a value
+// A promise is an asynchronous action that may complete at some point and produce a value
 // The easiest way to create a promise is by calling Promise.resolve
+// A promise can also be created using the promise constructor.
 
 function delayedGreeting(delay) {
     return new Promise(resolve => {setTimeout(() => resolve("Hello World"), delay)});
