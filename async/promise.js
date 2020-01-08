@@ -8,3 +8,34 @@ function delayedGreeting(delay) {
 
 delayedGreeting(2000).then((value) => console.log(value));
 console.log('brace yourselves. Incoming greetings');
+
+// handling failures
+let students = [
+    {
+        id : 0,
+        name : 'Ezekiel Kalama'
+    },
+    {
+        id : 1,
+        name : 'John Doe'
+    }
+]
+
+function getNameOrError(id) {
+    return new Promise((resolve, reject) => {
+        try{
+            let name = students[id].name
+            resolve(name);
+        }
+        catch(error){
+            reject(new TypeError('FAil'));
+        }
+        
+    });
+}
+
+getNameOrError(0).then((value) => {
+    console.log(value);
+}).catch(reason => {
+    console.log('Error', reason);
+});
