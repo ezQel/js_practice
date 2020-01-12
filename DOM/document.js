@@ -25,4 +25,4 @@ function replaceImages() {
     }
     }
 
-    
+w3c.style.color = 'green'; // change w3c link color to green
