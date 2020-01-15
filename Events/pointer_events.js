@@ -3,5 +3,5 @@ window.addEventListener("click", event => {
     dot.className = "dot";
     dot.style.left = (event.pageX - 4) + "px";
     dot.style.top = (event.pageY - 4) + "px";
-    document.body.findappendChild(dot);
+    document.body.appendChild(dot);
     });
